@@ -1,1 +1,1 @@
-A repository to sumamrize and practice python.
+# A repository to summarize and practice python features.
