@@ -49,6 +49,7 @@ sum_counter()
 def range_function(min,max,jump):
     for numbers in range(min,max,jump):
         print(numbers)
+'''
 
 print("Let's create a range of numbers!")
 print("Enter the starting number (inclusive):")
@@ -60,6 +61,22 @@ max_input = int(input())
 print("Enter the step size (positive or negative):")
 jump_input = int(input())
 
-# --- Run the function with user inputs ---
 range_function(min_input, max_input, jump_input)
+'''
 
+'''
+Duplicate search
+'''
+
+def duplicate_search():
+    mlist = ['a', 'v', 'c', 0, 4, 44, 3, 0, 15, 'c', 'c', 'Janos', 'Janos']
+
+    duplicates = []
+    for item in mlist:
+        if mlist.count(item)>1:
+            if item not in duplicates:
+                duplicates.append(item)
+
+    print(duplicates)
+
+duplicate_search()
