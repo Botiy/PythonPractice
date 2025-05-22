@@ -80,3 +80,16 @@ def duplicate_search():
     print(duplicates)
 
 duplicate_search()
+
+'''
+Highest even
+'''
+
+def highest_even(custom_list):
+    evens = []
+    for item in custom_list:
+        if item % 2 == 0:
+            evens.append(item)
+    return max(evens)
+
+print(highest_even([2,5,12,32,432,234113,123,1223,1444,2002]))
