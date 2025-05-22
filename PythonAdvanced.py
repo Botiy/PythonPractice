@@ -45,3 +45,21 @@ def sum_counter():
 
 sum_counter()
 
+# Start, stop, stepover
+def range_function(min,max,jump):
+    for numbers in range(min,max,jump):
+        print(numbers)
+
+print("Let's create a range of numbers!")
+print("Enter the starting number (inclusive):")
+min_input = int(input())
+
+print("Enter the ending number (exclusive):")
+max_input = int(input())
+
+print("Enter the step size (positive or negative):")
+jump_input = int(input())
+
+# --- Run the function with user inputs ---
+range_function(min_input, max_input, jump_input)
+
