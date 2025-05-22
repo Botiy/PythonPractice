@@ -16,5 +16,22 @@ def magic():
     else:
         print("Neither")
 
-magic()
+#magic()
+
+'''
+Loops
+'''
+# iterable: list, dictionary, tuple, set, string
+# iteratre: one by one check each item
+
+def iteration(name, age, height):
+    person = {
+        'name': name,
+        'age': age,
+        'height': height
+    }
+    for item in person.items():
+        print(item)
+
+iteration('Boti', 23, 195)
 
