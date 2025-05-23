@@ -33,7 +33,7 @@ def iteration(name, age, height):
     for item in person.items():
         print(item)
 
-iteration('Boti', 23, 195)
+#iteration('Boti', 23, 195)
 
 def sum_counter():
     nl = [0,1,2,3,4,5,6,7,8,9,10]
@@ -43,7 +43,7 @@ def sum_counter():
         count += item
         print(count)
 
-sum_counter()
+#sum_counter()
 
 # Start, stop, stepover
 def range_function(min,max,jump):
@@ -79,7 +79,7 @@ def duplicate_search():
 
     print(duplicates)
 
-duplicate_search()
+#duplicate_search()
 
 '''
 Highest even
@@ -92,4 +92,28 @@ def highest_even(custom_list):
             evens.append(item)
     return max(evens)
 
-print(highest_even([2,5,12,32,432,234113,123,1223,1444,2002]))
+#print(highest_even([2,5,12,32,432,234113,123,1223,1444,2002]))
+
+'''
+Prime
+'''
+def prime(number):
+    '''
+    Tells whether an input number is a prime number or not.
+    :param number: The input number.
+    :return:
+    '''
+    if int(number) % 2 == 0:
+        print(f"{number} is not a prime number!")
+        return
+    else:
+        count = 3
+        while count < (int(number) / 2):
+            if int(number)%count==0:
+                print(f"{number} is not a prime number!")
+                return
+            count += 1
+        print(f"{number} is a prime number!")
+        return
+
+prime(input())
