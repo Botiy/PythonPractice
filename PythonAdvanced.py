@@ -116,4 +116,32 @@ def prime(number):
         print(f"{number} is a prime number!")
         return
 
-prime(input())
+#prime(input())
+
+'''
+Primes in a range
+'''
+
+def range_prime(min, max):
+    '''
+    Shows whether numbers are prime or not within the given range.
+    :param min: Beginning
+    :param max: End
+    :return: None
+    '''
+    for number in range(int(min), int(max)):
+        if number < 2:
+            print(f"{number} is not a prime number!")
+            continue
+        is_prime = True
+        for i in range(2, int(number ** 0.5) + 1):  # Only check up to square root
+            if number % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            print(f"{number} is a prime number!")
+        else:
+            print(f"{number} is not a prime number!")
+
+# Prompt user input and run
+range_prime(input("Enter minimum number: "), input("Enter maximum number: "))
