@@ -144,4 +144,16 @@ def range_prime(min, max):
             print(f"{number} is not a prime number!")
 
 # Prompt user input and run
-range_prime(input("Enter minimum number: "), input("Enter maximum number: "))
+#range_prime(input("Enter minimum number: "), input("Enter maximum number: "))
+
+'''
+Recursive function - factorial
+'''
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(int(input("Enter a number, to calculate it's factorial value: "))))
