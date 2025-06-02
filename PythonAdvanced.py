@@ -1,6 +1,9 @@
 '''
 Conditional logic
 '''
+import random
+
+
 def magic():
     print("Are you a wizard?")
     wizard = bool(input())
@@ -156,4 +159,24 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 
-print(factorial(int(input("Enter a number, to calculate it's factorial value: "))))
+#print(factorial(int(input("Enter a number, to calculate it's factorial value: "))))
+
+'''
+Random number
+'''
+
+def random_range():
+    try:
+        min = int(input("Enter minimum value:"))
+        max = int(input("Enter maximum value:"))
+
+        if(min >= max):
+            print("Incorrect values, maximum must be bigger than minimum!")
+            return
+
+        number = random.randint(min+1,max-1)
+        print(f"Random number between {min} and {max}: {number}")
+    except ValueError:
+        print("We need integer numbers without decimal points!")
+
+random_range()
